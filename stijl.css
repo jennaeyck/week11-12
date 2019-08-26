@@ -1,0 +1,112 @@
+:root {
+	font-size: 150%;
+	font-family: avenir book, sans-serif;}
+
+body {
+      background-color: #eee8eb;}
+
+.photos {
+      width: 700px;
+      height: auto;
+      margin: 2rem auto;}
+
+.text {
+  color: black;
+  background-color: white;
+  margin-left: 2rem;}
+
+img {
+  border: 0.5rem solid lightgrey;
+  width: 30rem;
+  margin: 6rem;
+  image-orientation: center;}
+
+main {
+  margin: 10rem;
+  width: 20rem;
+  border: 0.5rem solid lightgrey;
+  background-color: white;}
+
+h1 {
+ 	background-color: white;
+	height: 5rem;
+	margin-top: 1rem;
+	text-align: center;}
+
+h2 {
+  font-style: oblique;
+  font-size: 5rem;}
+
+iframe {
+  margin: 2rem;
+  margin-left: 17rem;}
+
+.me {
+	width: 20rem;
+	float: right;}
+
+/* portfolio */
+.portfolio {
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
+		grid-gap: 1rem;
+		margin: 10vh auto;
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 50rem;}
+
+	.h1 {
+		font-weight: bold;
+		margin-left: 3rem;
+		margin-top: 3rem;
+		font-style: italic;}
+
+	.h2 {
+		height: 100%;
+		color: transparent;
+		background-color: transparent;
+		padding: 2rem;
+		font-size: 2rem;
+		line-height: 3rem;}
+
+.dark, .light {
+	font-weight: bold;
+	margin-left: 3rem;
+	margin-top: 3rem;
+	font-style: italic;
+	font-size: 0.5rem;
+	float: right;}
+
+@supports (grid-area: auto) {
+  @media (min-width: 0rem) {
+    p {
+    	opacity: 0%;}
+    img {
+      width: 200px;
+      height: auto;
+      margin: 2rem auto;}
+  	}
+  @media (min-width: 40rem) {
+    p {
+      opacity: 0%;}
+    img {
+      width: 300px;
+      height: auto;
+      margin: 2rem auto;}
+  	}
+  @media (min-width: 60rem) {
+    p {
+      opacity: 0%;}
+    img {
+      width: 400px;
+      height: auto;
+      margin: 2rem auto;}
+  	}
+  @media (min-width: 80rem) {
+    img {
+      width: 500px;
+      height: auto;
+      margin: 2rem auto;}
+    p {
+      opacity: 100%}
+  	}
